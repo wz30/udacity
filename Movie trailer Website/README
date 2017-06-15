@@ -1,0 +1,10 @@
+The step to run the web application
+1.download the Movie trailer Website
+2.They are 6 files in the movie file
+3.open the entertainment.py with pyhon IDE or IDLE
+4.run it: you will see the trailer website.
+
+Note: entertainment.py: open the website
+      media.py : define the class of movie
+      fresh_tomatoes.py: take the movies'list and generate website
+      fresh_tomatoes.pyc, media.pyc, fresh_tomatoes.html : after run the app, you will get the three files
