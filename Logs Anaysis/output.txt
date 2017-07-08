@@ -1,0 +1,11 @@
+The three most popular essay: 
+        candidate-is-jerk, 338647
+       bears-love-berries, 253801
+          bad-things-gone, 170098
+The most popular authors: 
+          Ursula La Multa, 507594
+   Rudolf von Treppenwitz, 423457
+    Anonymous Contributor, 170098
+           Markoff Chaney,  84557
+The most errors > 0.01: 
+               2016-07-17, 0.022626862468
