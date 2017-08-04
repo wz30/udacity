@@ -1,0 +1,164 @@
+:root {
+    --udacity-blue: #02b3e4;
+    --dark: #2d3c49;
+    --steel: #7d97ad;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    margin: 1em;
+}
+
+header {
+    text-align: center;
+}
+
+.main-project {
+    border-top: 5px solid var(--steel);
+    margin-top: 3em;
+    padding-top: 3em;
+}
+
+.featured-work-container {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.featured-work-container li {
+    box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+    margin-bottom: 2em;
+    padding: 1em;
+    width: 85%;
+}
+
+#swatch-1 {
+    background-color: var(--udacity-blue);
+}
+
+#swatch-2 {
+    background-color: var(--dark);
+}
+
+#swatch-3 {
+    background-color: var(--steel);
+}
+
+.message {
+    text-align: center;
+    font-size: 1.1em;
+    padding: 2em;
+}
+
+img {
+    max-width: 100%;
+}
+
+.color-swatches {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+}
+
+.color-swatches li {
+    flex: 0 1 30%;
+    text-align: center;
+}
+
+.swatch {
+    min-height: 7em;
+}
+
+@media (min-width: 650px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    .headings {
+        flex: 1;
+        text-align: right;
+    }
+
+    .featured-work-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .featured-work-container li {
+        width: 45%;
+    }
+}
+
+@media (min-width: 800px) {
+    .color-swatches {
+        justify-content: space-around;
+    }
+
+    .color-swatches li {
+        flex-basis: 20%;
+    }
+
+    .swatch {
+        min-height: 9em;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: grid;
+        grid-template-columns: 20% 1fr;
+    }
+
+    header {
+        grid-column: 2 / 3;
+        margin-bottom: 2em;
+    }
+
+    .main-project {
+        margin-top: 0;
+    }
+
+    .color-swatches {
+        order: -1;
+        grid-row: 2 / 5;
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+        margin-top: 0;
+    }
+    .color-swatches li {
+        flex: 0 1 auto;
+        margin-bottom: 1em;
+        width: 80%;
+    }
+}
+
+@media (min-width: 1250px) {
+    .container {
+        margin: 1em auto;
+        max-width: 1250px;
+    }
+
+    .featured-work-container {
+        justify-content: space-between;
+    }
+
+    .featured-work-container li {
+        flex-basis: calc(100% / 3 - 2em);
+    }
+}
