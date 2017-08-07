@@ -180,11 +180,11 @@ Configure the Uncomplicated Firewall (UFW) to only allow incoming connections fo
 	from FlaskApp import app as application
 	application.secret_key = 'Add your secret key'
 	```
-##client_secrets.json
+## client_secrets.json
 1. change the origin url (in OAuth and jsosn file)
 2. change the redirect uri (in OAuth and jsosn file) use [xip.io](http://xip.io/)
 
-##upload file
+## upload file
 
 1. change the path ./uploads or using baserdir  for 'no such file or directionary'
 2. chmod 777 /uploads for 'permission denied'
