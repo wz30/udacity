@@ -184,13 +184,19 @@ Configure the Uncomplicated Firewall (UFW) to only allow incoming connections fo
 1. change the origin url (in OAuth and jsosn file)
 2. change the redirect uri (in OAuth and jsosn file) use [xip.io](http://xip.io/)
 
-##upload filr
+##upload file
 
 1. change the path ./uploads or using baserdir  for 'no such file or directionary'
 2. chmod 777 /uploads for 'permission denied'
 
 ## Restart Apache
 1. Restart Apache `sudo service apache2 restart `
+
+## login with grader
+1. download putty
+2. input ip and port(2200)
+3. GO to connection-auth import the putty.ppk(the private key)
+4. usename: grader passwd: 111111
 
 ## References:
 https://www.digitalocean.com/community/tutorials/how-to-deploy-a-flask-application-on-an-ubuntu-vps
