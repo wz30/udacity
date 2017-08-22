@@ -191,6 +191,18 @@ Here are five German traffic signs that I found on the web:
 
 ![alt text][image4] ![alt text][image5] ![alt text][image6] ![alt text][image7] ![alt text][image8] ![alt text][image9]
 
+The primary considerations that might make each of these more difficult to classify break down to:
+
+How does the degree of brightness and contrast influence the difficulty to classify?
+
+Is the angle of refrence similar to the angle of reference in the training data?
+
+How well did the classifier perform on this type of sign in the test data?
+
+How common is the sign type in the training data?
+
+How complicated is the background for the image?
+
 I used semi-easy images to classify and even modified them slightly.  I made them all uniform in size and only had one partially cut off.
 
 ####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. Identify where in your code predictions were made. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
