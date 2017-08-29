@@ -1,0 +1,110 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    height: 100%;
+    padding: 0px;
+}
+
+#main-title:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#main-title {
+    color: black;
+    width: 295px;
+}
+
+.drop-category {
+    font-weight: bold;
+}
+
+.button-row {
+    margin: 20px 0px 20px 0px;
+}
+
+.glyphicon-filter, .glyphicon-remove {
+    float: right;
+    margin-right: 5px;
+}
+
+.glyphicon-filter {
+    color: lightgray;
+}
+
+.filterLight {
+    color: black;
+}
+
+.selection-button:hover {
+    cursor: pointer;
+    background-color: darkgray;
+    border: solid 1px black;
+}
+
+.selection-button {
+    border: solid 1px lightgray;
+    border-radius: 4px;
+    padding: 5px 10px 5px 10px;
+/*    margin-left: 20px;
+    margin-right: 20px;*/
+}
+
+li:hover {
+    cursor: pointer;
+}
+
+.info-div {
+    max-width: 350px;
+}
+
+.main {
+    height: 100%;
+}
+
+#map {
+    height: 100%;
+}
+
+.mainImg {
+    height: 90px;
+    width: 90px;
+    border-radius: 4px;
+}
+
+.activeDistrict {
+    /*font-weight: bold;*/
+}
+
+.inactiveDistrict {
+    font-style: italic;
+    font-weight: light;
+    text-decoration: line-through;
+}
+
+.navbar-default .navbar-nav>li> .inactiveDistrict:hover {
+    text-decoration: line-through;
+}
+
+.foursquare-logo {
+    height: 25px;
+}
+
+.alert {
+    margin: 0px;
+}
+
+/* Primary mobile responsive CSS handled by the bootsnipp */
+@media (max-width: 768px) {
+    #main-title {
+        width: 195px;
+    }
+
+    .attribution {
+        margin-left: 15px;
+    }
+}
