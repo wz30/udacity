@@ -69,9 +69,9 @@ var ViewModel = function() {
     var self = this;
     var foursquareUrl = 'https://api.foursquare.com/v2/venues/';
     var foursquareParams = $.param({
-        'client_id': '5IEZ35JU3I1RNEMKSQXLVQ1RWMTHZHSGNQO4U0E4SPBAQC1V',
-        'client_secret': 'DHD0LK5VUJWKD4SUYSL4BUKX0XQ32WU03LMXVNHH04SIBRU4',
-        'v': '20130815'
+        'client_id': 'R3MF4JTK5MIWHOZEU0OKVG5GHANPXVUUPSWFYI3J1XJUJFN2',
+        'client_secret': 'TNDQUE4UI42AIR0KFKMVFIFRIQCSFGPLHYXXOL5BLOYX20R0',
+        'v': '20161016'
     });
 
     self.windowOpen = ko.observable( false );
@@ -154,7 +154,7 @@ var ViewModel = function() {
     self.getMarkers = ko.computed(function() {
         return self.restList().filter(function ( rest ) {
             if ( self.neighborhoodDict()[rest.neighborhood] ) {
-                if ( rest.is_visible === 'false' ) {
+                if ( rest.is_visible === false ) {
                     rest.marker.setMap( map );
                     rest.marker.setAnimation( google.maps.Animation.DROP );
 
