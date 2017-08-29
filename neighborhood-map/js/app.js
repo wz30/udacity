@@ -154,7 +154,7 @@ var ViewModel = function() {
     self.getMarkers = ko.computed(function() {
         return self.restList().filter(function ( rest ) {
             if ( self.neighborhoodDict()[rest.neighborhood] ) {
-                if ( rest.is_visible == false ) {
+                if ( rest.is_visible === false ) {
                     rest.marker.setMap( map );
                     rest.marker.setAnimation( google.maps.Animation.DROP );
 
