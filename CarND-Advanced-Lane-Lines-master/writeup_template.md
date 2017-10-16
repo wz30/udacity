@@ -53,7 +53,7 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines 55 through 85 in `Advanced_Lanes_Finding.py`).I discovered several combinations of gradient thresholds and color channel thresholds in multiple color spaces. These are listed clearly in the notebook.  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
 
-![alt text](./output_images/out4.jpg)
+![alt text](./output_images/out4.PNG)
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
@@ -118,6 +118,11 @@ Here's a [link to my video result](./project_out_video.mp4)
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
 
+
+- Take a better view to transform: choose a smaller section to take the transform because this video has sharper turns and the length of a lane is shorter than the previous videos.
+
+
+- Average according to a smaller number of frames. Right now I am averaging over 12 frames. This is not enough for the challenge video because the shape and direction of lanes changes quite fast.
 - Data set for training is really importantt, and whether selecting the right parameters for the training model decides if you get the precise result and detection.
 
 
