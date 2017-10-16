@@ -123,7 +123,10 @@ Here's a [link to my video result](./project_out_video.mp4)
 
 Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
 
+- Take a better view to transform: choose a smaller section to take the transform because this video has sharper turns and the length of a lane is shorter than the previous videos.
 
+
+- Average according to a smaller number of frames. Right now I am averaging over 12 frames. This is not enough for the challenge video because the shape and direction of lanes changes quite fast.
 - Data set for training is really importantt, and whether selecting the right parameters for the training model decides if you get the precise result and detection.
 
 
